@@ -57,18 +57,70 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\images\cloud.png" />
+    <Content Include="assets\images\island.png" />
+    <Content Include="assets\images\ocean.gif" />
+    <Content Include="assets\images\plane.png" />
+    <Content Include="css\game.css" />
+    <Content Include="index.html" />
+    <Content Include="Scripts\game.js" />
+    <Content Include="Scripts\game.ts" />
+    <Content Include="Scripts\lib\easeljs-0.8.0.min.js" />
+    <Content Include="Scripts\lib\preloadjs-0.6.0.min.js" />
+    <Content Include="Scripts\lib\soundjs-0.6.0.min.js" />
+    <Content Include="Scripts\lib\Stats.js" />
+    <Content Include="Scripts\lib\tweenjs-0.6.0.min.js" />
+    <Content Include="Scripts\objects\cloud.js" />
+    <Content Include="Scripts\objects\cloud.ts" />
+    <Content Include="Scripts\objects\gameobject.js" />
+    <Content Include="Scripts\objects\gameobject.ts" />
+    <Content Include="Scripts\objects\island.js" />
+    <Content Include="Scripts\objects\island.ts" />
+    <Content Include="Scripts\objects\ocean.js" />
+    <Content Include="Scripts\objects\ocean.ts" />
+    <Content Include="Scripts\objects\plane.js" />
+    <Content Include="Scripts\objects\plane.ts" />
+    <Content Include="Scripts\objects\scoreboard.js" />
+    <Content Include="Scripts\objects\scoreboard.ts" />
+    <Content Include="Scripts\states\gameplay.js" />
+    <Content Include="Scripts\states\gameplay.ts" />
+    <Content Include="Scripts\typings\createjs-lib\createjs-lib.d.ts" />
+    <Content Include="Scripts\typings\easeljs\easeljs.d.ts" />
+    <Content Include="Scripts\typings\preloadjs\preloadjs.d.ts" />
+    <Content Include="Scripts\typings\soundjs\soundjs.d.ts" />
+    <Content Include="Scripts\typings\stats\stats.d.ts" />
+    <Content Include="Scripts\typings\tweenjs\tweenjs.d.ts" />
+    <Content Include="Scripts\typings\webaudioapi\waa.d.ts" />
+    <Content Include="Scripts\typings\webrtc\MediaStream.d.ts" />
+    <Content Include="Scripts\typings\webrtc\RTCPeerConnection.d.ts" />
+    <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\audio\engine.ogg" />
+    <Content Include="assets\audio\thunder.ogg" />
+    <Content Include="assets\audio\yay.ogg" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\states\gameplay.js.map" />
+    <Content Include="Scripts\objects\cloud.js.map" />
+    <Content Include="Scripts\objects\gameobject.js.map" />
+    <Content Include="Scripts\objects\island.js.map" />
+    <Content Include="Scripts\objects\ocean.js.map" />
+    <Content Include="Scripts\objects\plane.js.map" />
+    <Content Include="Scripts\objects\scoreboard.js.map" />
+    <Content Include="Scripts\game.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\fonts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
