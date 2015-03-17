@@ -1,11 +1,11 @@
-﻿/// <reference path="../objects/gameobject.ts" />
+﻿/// <reference path="../constants.ts" />
+/// <reference path="../objects/gameobject.ts" />
 /// <reference path="../objects/island.ts" />
 /// <reference path="../objects/ocean.ts" />
 /// <reference path="../objects/plane.ts" />
 /// <reference path="../objects/cloud.ts" />
 /// <reference path="../objects/scoreboard.ts" />
-
-
+/// <reference path="../objects/label.ts" />
 
 module states {
 
@@ -22,7 +22,6 @@ module states {
             // Instantiate Game Container
             this.game = new createjs.Container();
 
-    
 
             //Ocean object
             this.ocean = new objects.Ocean();
@@ -102,22 +101,21 @@ module states {
             if (this.scoreboard.lives < 1) {
                 this.scoreboard.active = false;
                 createjs.Sound.stop();
+                currentScore = this.scoreboard.score;
+                if (currentScore > highScore) {
+                    highScore = currentScore;
+                }
                 this.game.removeAllChildren();
                 stage.removeChild(this.game);
+                currentState = constants.GAME_OVER_STATE;
+                stateChanged = true;
             }
 
             stage.update(); // Refreshes our stage
 
     } // Update Method
 
-
-
-
-
-
-
     } // GamePlay Class
-
 
 
 } // States Module
