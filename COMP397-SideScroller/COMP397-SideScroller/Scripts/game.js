@@ -31,15 +31,15 @@ var gamePlay;
 var gameOver;
 var menu;
 var manifest = [
-    { id: "cloud", src: "assets/images/cloud.png" },
-    { id: "island", src: "assets/images/island.png" },
-    { id: "ocean", src: "assets/images/ocean.gif" },
-    { id: "plane", src: "assets/images/plane.png" },
+    { id: "cloud", src: "assets/images/asteroid.png" },
+    { id: "island", src: "assets/images/astronaut.png" },
+    { id: "ocean", src: "assets/images/space.jpg" },
+    { id: "plane", src: "assets/images/rocket.png" },
     { id: "playButton", src: "assets/images/playButton.png" },
-    { id: "tryAgainButton", src: "assets/images/tryAgainButton.png" },
-    { id: "engine", src: "assets/audio/engine.ogg" },
-    { id: "yay", src: "assets/audio/yay.ogg" },
-    { id: "thunder", src: "assets/audio/thunder.ogg" }
+    { id: "playAgainButton", src: "assets/images/playAgainButton.png" },
+    { id: "engine", src: "assets/audio/rocket.mp3" },
+    { id: "yay", src: "assets/audio/saved.mp3" },
+    { id: "thunder", src: "assets/audio/explosion.mp3" }
 ];
 function Preload() {
     assetLoader = new createjs.LoadQueue(); // create a new preloader

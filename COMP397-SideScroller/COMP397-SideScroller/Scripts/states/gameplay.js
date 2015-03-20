@@ -11,14 +11,18 @@ var states;
     var GamePlay = (function () {
         function GamePlay() {
             this.clouds = [];
+
             // Instantiate Game Container
             this.game = new createjs.Container();
+
             //Ocean object
             this.ocean = new objects.Ocean();
             this.game.addChild(this.ocean);
+
             //Island object
             this.island = new objects.Island();
             this.game.addChild(this.island);
+
             //Plane object
             this.plane = new objects.Plane();
             this.game.addChild(this.plane);
@@ -26,8 +30,10 @@ var states;
                 this.clouds[cloud] = new objects.Cloud();
                 this.game.addChild(this.clouds[cloud]);
             }
+
             // Instantiate Scoreboard
             this.scoreboard = new objects.ScoreBoard(this.game);
+
             // Add Game Container to Stage
             stage.addChild(this.game);
         } // Constructor

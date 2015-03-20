@@ -14,7 +14,7 @@ var objects;
             _super.call(this, assetLoader.getResult("plane"));
             this.width = this.getBounds().width;
             this.height = this.getBounds().height;
-            this.y = 430;
+            this.x = 100;
             this.regX = this.width * 0.5;
             this.regY = this.height * 0.5;
             createjs.Sound.play("engine", { loop: -1 });
@@ -22,6 +22,7 @@ var objects;
         // PUBLIC METHODS
         Plane.prototype.update = function () {
             this.x = stage.mouseX;
+            this.y = stage.mouseY;
         };
         return Plane;
     })(createjs.Bitmap);

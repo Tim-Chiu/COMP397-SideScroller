@@ -45,7 +45,7 @@ var manifest = [
     { id: "ocean", src: "assets/images/ocean.gif" },
     { id: "plane", src: "assets/images/plane.png" },
     { id: "playButton", src: "assets/images/playButton.png" },
-    { id: "tryAgainButton", src: "assets/images/tryAgainButton.png" },
+    { id: "playAgainButton", src: "assets/images/playAgainButton.png" },
     { id: "engine", src: "assets/audio/engine.ogg" },
     { id: "yay", src: "assets/audio/yay.ogg" },
     { id: "thunder", src: "assets/audio/thunder.ogg" }
