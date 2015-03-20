@@ -26,19 +26,24 @@ var states;
             //Game Over Label
             this.gameOverLabel = new objects.Label(320, 40, "GAME OVER");
             this.gameOverLabel.font = "60px Candara";
+            this.gameOverLabel.color = "#ffffff";
             this.gameOverLabel.regX = this.gameOverLabel.getMeasuredWidth() * 0.5;
             this.gameOverLabel.regY = this.gameOverLabel.getMeasuredLineHeight() * 0.5;
             this.game.addChild(this.gameOverLabel);
 
-            //High Score Label
-            this.highScoreLabel = new objects.Label(320, 180, ("High Score: " + highScore));
-            this.game.addChild(this.highScoreLabel);
-
-            //Final Score Label
-            this.scoreLabel = new objects.Label(320, 120, ("Score: " + currentScore));
+            //Score Label
+            this.scoreLabel = new objects.Label(380, 160, ("Score: " + currentScore));
+            this.scoreLabel.font = "20px Candara";
+            this.scoreLabel.color = "#ffffff";
             this.game.addChild(this.scoreLabel);
 
-            //Try Again Button
+            //High Score Label
+            this.highScoreLabel = new objects.Label(420, 200, ("High Score: " + highScore));
+            this.highScoreLabel.font = "20px Candara";
+            this.highScoreLabel.color = "#ffffff";
+            this.game.addChild(this.highScoreLabel);
+
+            //Play Again Button
             this.playAgainButton = new objects.Button(320, 280, "playAgainButton");
             this.playAgainButton.on("click", this.playAgainClicked, this);
             this.game.addChild(this.playAgainButton);

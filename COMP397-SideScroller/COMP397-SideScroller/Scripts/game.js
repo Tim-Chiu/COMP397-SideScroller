@@ -16,6 +16,15 @@
 /// <reference path="states/gameplay.ts" />
 /// <reference path="states/gameover.ts" />
 /// <reference path="states/menu.ts" />
+
+/*
+Source File: Game.js
+Author/Developer's Name: Tim Chiu
+Last Modified Date: 3/19/2015
+Date Last Modified: 3/19/2015
+Program Description: Side Scroller Game
+*/
+
 // Global game Variables
 var canvas;
 var stage;
@@ -23,6 +32,7 @@ var assetLoader;
 var stats = new Stats();
 var currentScore = 0;
 var highScore = 0;
+
 // Game State Variables
 var currentState;
 var currentStateFunction;
@@ -37,7 +47,7 @@ var manifest = [
     { id: "plane", src: "assets/images/rocket.png" },
     { id: "playButton", src: "assets/images/playButton.png" },
     { id: "playAgainButton", src: "assets/images/playAgainButton.png" },
-    { id: "engine", src: "assets/audio/rocket.mp3" },
+    { id: "engine", src: "assets/audio/rocket2.mp3" },
     { id: "yay", src: "assets/audio/saved.mp3" },
     { id: "thunder", src: "assets/audio/explosion.mp3" }
 ];

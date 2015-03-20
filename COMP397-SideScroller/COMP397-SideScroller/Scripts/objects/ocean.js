@@ -13,7 +13,7 @@ var objects;
         function Ocean() {
             _super.call(this, assetLoader.getResult("ocean"));
             // PUBLIC INSTANCE VARIABLES
-            this._dy = 5;
+            this._dy = 3;
             this.reset();
         }
         // PUBLIC METHODS ++++++++++++++++++++++++++++++++++++++++++
@@ -21,14 +21,12 @@ var objects;
             this.x -= this._dy;
             this._checkBounds();
         };
-        // Reset position of island to the top
         Ocean.prototype.reset = function () {
             this.x = 0;
         };
         // PRIVATE METHODS +++++++++++++++++++++++++++++++++++++++++
         Ocean.prototype._checkBounds = function () {
-            // check if island has left the bottom of the screen
-            if (this.x === -640) {
+            if (this.x === -960) {
                 this.reset();
             }
         };

@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="assets\audio\explosion.mp3" />
     <Content Include="assets\audio\rocket.mp3" />
+    <Content Include="assets\audio\rocket2.mp3" />
     <Content Include="assets\audio\saved.mp3" />
     <Content Include="assets\images\asteroid.png" />
     <Content Include="assets\images\astronaut.png" />
