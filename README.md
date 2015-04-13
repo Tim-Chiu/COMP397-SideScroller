@@ -1,4 +1,3 @@
-# COMP397-SideScroller\
+# COMP397-SideScroller
 
-Assignment 3
-Also for Term Project Arcade Game
+Assignment 3 for COMP 397, and also Term Project Arcade Game
