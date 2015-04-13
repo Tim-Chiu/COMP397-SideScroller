@@ -22,6 +22,8 @@ var objects;
         Plane.prototype.update = function () {
             this.x = stage.mouseX;
             this.y = stage.mouseY;
+            
+
         };
         return Plane;
     })(createjs.Bitmap);

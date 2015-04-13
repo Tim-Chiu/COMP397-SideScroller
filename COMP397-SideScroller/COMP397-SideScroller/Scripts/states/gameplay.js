@@ -11,7 +11,7 @@ var states;
     var GamePlay = (function () {
         function GamePlay() {
             this.clouds = [];
-
+            stage.cursor = "none";
             // Instantiate Game Container
             this.game = new createjs.Container();
 
@@ -52,9 +52,11 @@ var states;
                         createjs.Sound.play(collider.sound);
                         if (collider.name == "cloud") {
                             this.scoreboard.lives--;
+                            
                         }
                         if (collider.name == "island") {
                             this.scoreboard.score += 100;
+                            this.island.reset();
                         }
                     }
                     collider.isColliding = true;
