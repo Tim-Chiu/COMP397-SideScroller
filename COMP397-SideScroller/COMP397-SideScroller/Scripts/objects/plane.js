@@ -14,7 +14,6 @@ var objects;
             _super.call(this, assetLoader.getResult("plane"));
             this.width = this.getBounds().width;
             this.height = this.getBounds().height;
-            this.x = 100;
             this.regX = this.width * 0.5;
             this.regY = this.height * 0.5;
             createjs.Sound.play("engine", { loop: -1 });

@@ -68,6 +68,7 @@
     <Content Include="assets\images\playButton.png" />
     <Content Include="assets\images\rocket.png" />
     <Content Include="assets\images\space.jpg" />
+    <Content Include="assets\images\space2.jpg" />
     <Content Include="css\game.css" />
     <Content Include="index.html" />
     <Content Include="Scripts\constants.js" />
@@ -99,6 +100,7 @@
     <Content Include="Scripts\states\gameover.ts" />
     <Content Include="Scripts\states\gameplay.js" />
     <Content Include="Scripts\states\gameplay.ts" />
+    <Content Include="Scripts\states\instructions.js" />
     <Content Include="Scripts\states\menu.js" />
     <Content Include="Scripts\states\menu.ts" />
     <Content Include="Scripts\typings\createjs-lib\createjs-lib.d.ts" />

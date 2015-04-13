@@ -31,14 +31,14 @@ var objects;
         Cloud.prototype.reset = function () {
             this.y = Math.floor(Math.random() * 480);;
             this.x = 960;
-            this._dy = Math.floor(Math.random() * 10) - 5;
-            this._dx = Math.floor(Math.random() * 4) + 5;
+            this._dy = Math.floor(Math.random() * 5) - 5;
+            this._dx = Math.floor(Math.random() * 5) + 5;
         };
 
         // PRIVATE METHODS +++++++++++++++++++++++++++++++++++++++++
         Cloud.prototype._checkBounds = function () {
             // check if asteroids has left the screen
-            if (this.x < 0) {
+            if (this.x < (0 - this.width)) {
                 this.reset();
             }
         };

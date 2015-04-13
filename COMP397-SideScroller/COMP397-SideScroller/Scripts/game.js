@@ -1,28 +1,10 @@
-/// <reference path="typings/createjs-lib/createjs-lib.d.ts" />
-/// <reference path="typings/easeljs/easeljs.d.ts" />
-/// <reference path="typings/tweenjs/tweenjs.d.ts" />
-/// <reference path="typings/soundjs/soundjs.d.ts" />
-/// <reference path="typings/preloadjs/preloadjs.d.ts" />
-/// <reference path="typings/stats/stats.d.ts" />
-/// <reference path="constants.ts" />
-/// <reference path="objects/gameobject.ts" />
-/// <reference path="objects/scoreboard.ts" />
-/// <reference path="objects/plane.ts" />
-/// <reference path="objects/island.ts" />
-/// <reference path="objects/cloud.ts" />
-/// <reference path="objects/ocean.ts" />
-/// <reference path="objects/button.ts" />
-/// <reference path="objects/label.ts" />
-/// <reference path="states/gameplay.ts" />
-/// <reference path="states/gameover.ts" />
-/// <reference path="states/menu.ts" />
 
 /*
 Source File: Game.js
 Author/Developer's Name: Tim Chiu
-Last Modified Date: 3/19/2015
-Date Last Modified: 3/19/2015
-Program Description: Side Scroller Game
+Last Modified Date: 4/12/2015
+Date Last Modified: 4/12/2015
+Program Description: Final Project - Arcade Game
 */
 
 // Global game Variables
@@ -39,6 +21,7 @@ var currentStateFunction;
 var stateChanged = false;
 var gamePlay;
 var gameOver;
+var instructions;
 var menu;
 var manifest = [
     { id: "cloud", src: "assets/images/asteroid.png" },
@@ -47,6 +30,7 @@ var manifest = [
     { id: "plane", src: "assets/images/rocket.png" },
     { id: "playButton", src: "assets/images/playButton.png" },
     { id: "playAgainButton", src: "assets/images/playAgainButton.png" },
+    { id: "instructionButton", src: "assets/images/instructionButton.png" },
     { id: "engine", src: "assets/audio/rocket2.mp3" },
     { id: "yay", src: "assets/audio/saved.mp3" },
     { id: "thunder", src: "assets/audio/explosion.mp3" }
@@ -102,6 +86,11 @@ function changeState(state) {
             // instantiate game over screen
             gameOver = new states.GameOver();
             currentStateFunction = gameOver;
+            break;
+        case constants.INSTRUCTIONS_STATE:
+            //instantiate instructions screen
+            instructions = new states.Instructions();
+            currentStateFunction = instructions;
             break;
     }
 }

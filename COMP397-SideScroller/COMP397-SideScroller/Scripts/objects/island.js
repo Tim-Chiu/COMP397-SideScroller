@@ -13,14 +13,12 @@ var objects;
         function Island() {
             _super.call(this, "island");
             this.sound = "yay";
-            this._dy = 2;
+            this._dx = 5;
             this.reset();
         }
         // PUBLIC METHODS ++++++++++++++++++++++++++++++++++++++++++
         Island.prototype.update = function () {
-            this.y += this._dy;
             this.x -= this._dx;
-            this.rotation += this._dx;
             this.rotation += this._dy;
             this._checkBounds();
         };
@@ -28,17 +26,14 @@ var objects;
         Island.prototype.reset = function () {
             this.y = Math.floor(Math.random() * 480);
             this.x = 960;
-
-            this.y = Math.floor(Math.random() * 480);;
-            this.x = 960;
-            this._dy = Math.floor(Math.random() * 10) - 5;
-            this._dx = Math.floor(Math.random() * 4) + 5;
+            this._dy = Math.floor(Math.random() * 0.5) - 5;
+            this._dx = Math.floor(Math.random() * 0.5) + 5;
         };
 
         // PRIVATE METHODS +++++++++++++++++++++++++++++++++++++++++
         Island.prototype._checkBounds = function () {
             // check if island has left the bottom of the screen
-            if (this.x < 0) {
+            if (this.x <= (0 - this.width)) {
                 this.reset();
             }
         };

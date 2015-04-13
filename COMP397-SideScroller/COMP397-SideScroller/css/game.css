@@ -1,3 +1,7 @@
 ﻿#canvas{
     border: dashed 1px black;
 }
+body         { background-color: black; color: #AAA; font-size: 12pt; padding: 0; margin: 0; }
+#stars       { display: block; margin: auto; }
+
+
