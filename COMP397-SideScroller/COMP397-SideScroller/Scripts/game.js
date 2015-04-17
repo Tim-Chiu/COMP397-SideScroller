@@ -2,8 +2,8 @@
 /*
 Source File: Game.js
 Author/Developer's Name: Tim Chiu
-Last Modified Date: 4/12/2015
-Date Last Modified: 4/12/2015
+Last Modified Date: 4/17/2015
+Date Last Modified: 4/17/2015
 Program Description: Final Project - Arcade Game
 */
 
@@ -20,6 +20,7 @@ var currentState;
 var currentStateFunction;
 var stateChanged = false;
 var gamePlay;
+var gamePlayLeveltwo;
 var gameOver;
 var instructions;
 var menu;
@@ -28,9 +29,11 @@ var manifest = [
     { id: "island", src: "assets/images/astronaut.png" },
     { id: "ocean", src: "assets/images/space.jpg" },
     { id: "plane", src: "assets/images/rocket.png" },
-    { id: "playButton", src: "assets/images/playButton.png" },
+    { id: "playButton", src: "assets/images/level1Button.png" },
     { id: "playAgainButton", src: "assets/images/playAgainButton.png" },
     { id: "instructionButton", src: "assets/images/instructionButton.png" },
+    { id: "play2Button", src: "assets/images/level2Button.png" },
+    { id: "backButton", src: "assets/images/backButton.png" },
     { id: "engine", src: "assets/audio/rocket2.mp3" },
     { id: "yay", src: "assets/audio/saved.mp3" },
     { id: "thunder", src: "assets/audio/explosion.mp3" }

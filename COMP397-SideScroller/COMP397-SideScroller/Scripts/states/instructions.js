@@ -15,6 +15,8 @@ var states;
         // CONSTRUCTOR ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         function Instructions() {
             this.play = false;
+            this.back = false;
+
             // Instantiate Game Container
             this.game = new createjs.Container();
 
@@ -62,11 +64,19 @@ var states;
             this.playButton.on("click", this.playClicked, this);
             this.game.addChild(this.playButton);
 
+            //Back Button
+            this.backButton = new objects.Button(320, 420, "backButton");
+            this.backButton.on("click", this.backClicked, this);
+            this.game.addChild(this.backButton);
+
             // Add Game Container to Stage
             stage.addChild(this.game);
         } // Constructor
         Instructions.prototype.playClicked = function () {
             this.play = true;
+        };
+        Instructions.prototype.backClicked = function () {
+            this.back = true;
         };
 
         // PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -76,6 +86,12 @@ var states;
                 this.game.removeAllChildren();
                 stage.removeChild(this.game);
                 currentState = constants.PLAY_STATE;
+                stateChanged = true;
+            }
+            if (this.back) {
+                this.game.removeAllChildren();
+                stage.removeChild(this.game);
+                currentState = constants.MENU_STATE;
                 stateChanged = true;
             }
             stage.update(); // Refreshes our stage

@@ -61,9 +61,15 @@
     <Content Include="assets\audio\rocket.mp3" />
     <Content Include="assets\audio\rocket2.mp3" />
     <Content Include="assets\audio\saved.mp3" />
+    <Content Include="assets\images\alien.png" />
     <Content Include="assets\images\asteroid.png" />
     <Content Include="assets\images\astronaut.png" />
+    <Content Include="assets\images\backButton.png" />
     <Content Include="assets\images\instructionButton.png" />
+    <Content Include="assets\images\level1Button.png" />
+    <Content Include="assets\images\level2Button.png" />
+    <Content Include="assets\images\level3Button.png" />
+    <Content Include="assets\images\menuButton.png" />
     <Content Include="assets\images\playAgainButton.png" />
     <Content Include="assets\images\playButton.png" />
     <Content Include="assets\images\rocket.png" />
@@ -100,6 +106,7 @@
     <Content Include="Scripts\states\gameover.ts" />
     <Content Include="Scripts\states\gameplay.js" />
     <Content Include="Scripts\states\gameplay.ts" />
+    <Content Include="Scripts\states\gameplayleveltwo.js" />
     <Content Include="Scripts\states\instructions.js" />
     <Content Include="Scripts\states\menu.js" />
     <Content Include="Scripts\states\menu.ts" />
